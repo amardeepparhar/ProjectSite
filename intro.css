@@ -1,0 +1,286 @@
+h1,h2,h3,h5,h4{
+font-family: "DINWebItalic";
+
+}
+
+
+h1{
+	font-size: 20px;
+	text-decoration: underline;
+	width:100%;
+	background:#3c6e9a;
+	text-align:center;
+	color:white;
+}
+
+
+h2 {
+	font-size: 25px;
+}
+
+h3{
+	padding-left: 1em;
+	font-size:18px;
+	}
+h4 {
+	font-size:17px;
+	padding-left: 1em;
+	}
+h5{ 
+color:white;
+background-color:#325c81;
+text-align:left;
+}
+
+p, tr, td, ol {
+	font-size:15px;
+	padding-left:2em;
+	padding-right:1em;
+}
+li,ol {
+margin: 10px 0;
+font-size:14px;
+padding-right:3em;
+}
+
+p span {
+	color:black;
+	font-weight: bold;
+	font-size:17px;
+}
+
+
+.container > * {
+    padding: 10px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+   
+}
+
+body {
+ background:#e9f0f6;
+ }
+ 
+.navbar {
+   
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #bdd2e5;
+    position: relative;
+    height: 5%;
+    overflow: auto;
+}
+.navbar ul li a {
+    border-right: 1px solid #a7c4dd;
+    display: inline;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    float: left;
+}
+.navbar ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.navbar ul li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+	
+
+header {
+    
+    background:#a7c4dd;
+    color: black;
+    padding-bottom: 1em;
+    width: 100%;
+    float:left;
+    postion:relative;  
+}
+
+.first {
+	flex-item:1;
+	 
+}
+.first h1, .second h1, .third h1 ,.fourth h1, ,fifth h1{
+	color: white;
+	font-size:15px;
+	background-color: black;
+}	
+.first ol {
+padding-left: 10em;	
+}
+.second {
+	 position: relative;
+	 flex-item:2;
+	
+	 
+}
+
+.third {
+	 
+	 position: relative;
+	 flex-item:3;
+
+}
+
+
+.fourth {
+	flex-item:4;
+	position:relative;
+	
+}
+
+
+    
+.fifth h3{
+	background: #4681b4;
+	color: white;
+}
+.fifth ol {
+	padding-left:4em;
+	
+}
+
+
+
+
+.first, .second, .third,.fourth, .fifth,.sixth {
+background: #bdd2e5;
+border: 3px solid #000000;
+margin: 0 1.5%;
+
+width:400px;
+margin-top: 1.5%;
+}
+
+
+#section-left {
+    overflow: hidden;
+    clear: right;
+}
+
+.content {
+	width:100%;
+	position:relative;
+	float:left;
+	padding-top: 2em;
+	clear:left;
+	background:#77a3ca;
+	display: flex;
+	margin: 0 0px;
+	-ms-box-orient: horizontal;
+ 	 display: -webkit-box;
+ 	 display: -moz-box;
+  	display: -ms-flexbox;
+ 	 display: -moz-flex;
+ 	 display: -webkit-flex;
+ 		display: flex;
+
+ 	 flex-wrap: wrap;
+	-webkit-align-content: stretch; /* Safari */
+ 	 align-content:         stretch;
+}
+img {
+float:left;width:150px;height:140px;
+ 
+}
+
+  .first { flex: 1 212px; }
+  
+  .second { flex 1 300px;order: 1; }
+  .third    {flex 1 300px; order: 2; }
+  .fourth { order: 3; }
+  .fifth { flex: 2 300px; order:4; }
+  .sixth { flex: 2 300px; order:5; }
+
+
+.titlebanner{
+	background: #d3e1ee;
+	text-align:center;
+	}
+
+div {
+    clear: left;
+}
+
+ol.a {list-style-type: decimal;}
+ol.b {list-style-type: square;border-spacing: 0; border-collapse: collapse;width: 100%;}
+ol.c {list-style-type: upper-roman;}
+
+    
+}
+
+#grading td, #grading th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+#grading tr:nth-child(even){
+	background-color:#4681b4;
+	color: white;
+	
+	
+	}
+
+#grading th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #5d92c0;
+    color: white;
+    padding:1em;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+#grading th:last-child{
+	padding:2em;
+}
+#grading tr {
+	background-color:#3c6e9a;
+	color: white;
+	padding:2em;
+}
+#grading tr:last-child {
+	align-text:right;
+}
+
+#grading{
+	width:100%;
+	}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   	.content{
+   		display:block;
+   		width:100%;
+   		}
+    .first,.second,.third,.fourth,.fifth,.sixth { 
+        display: block;
+        width: 90%;
+    }
+   .container {
+   	align-text:center;
+   	width:95%;
+   
+    
+    }
+}
